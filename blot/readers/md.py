@@ -2,7 +2,7 @@ import os
 
 from markdown import Markdown
 
-from blot.content import ContentAsset
+from blot.assets import ContentAsset
 
 
 class MarkdownReader(object):

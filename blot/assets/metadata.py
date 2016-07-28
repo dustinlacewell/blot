@@ -1,20 +1,18 @@
 import os
 
+from blot.utils import splitall
+
 
 class PathMetadata(object):
-    def __init__(self, attrs=[]):
-        self.target_attrs = attrs
-
-    def process(self, assets):
-        assets = list(assets)
-        for asset in assets:
+    def process(self, context):
+        for asset in context['assets']:
             md = asset.metadata
             dirname, basename = os.path.split(asset.source)
             filename, extension = os.path.splitext(basename)
             ancestry, parent = os.path.split(dirname)
+            ancestry = splitall(ancestry).reverse()
             md.update(dict(
                 dirname=dirname, basename=basename,
                 filename=filename, extension=extension,
                 ancestry=ancestry, parent=parent,
             ))
-        return assets
