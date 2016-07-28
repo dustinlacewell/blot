@@ -23,7 +23,6 @@ class MarkdownReader(object):
             for k, v in metadata.items():
                 if isinstance(v, list) and len(v) == 1:
                     metadata[k] = v[0]
-            self.markdown.reset()
             return self.asset_class(path, content, metadata)
 
     def read(self, paths):
