@@ -1,5 +1,6 @@
 import os
 
+from . import loaders, readers, assets, writers
 
 def _generate_type_context(type_config):
     '''
