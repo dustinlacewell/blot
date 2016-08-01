@@ -1,0 +1,7 @@
+#!/bin/bash
+
+export PYTHONPATH=../
+
+rm -fr ./source/autodoc/
+python autodoc.py -fM -o source/autodoc/ ../ ../blot/tests
+make html
