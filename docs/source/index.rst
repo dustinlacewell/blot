@@ -49,3 +49,13 @@ Blot site-configuration reflects this process and consists of defining pipelines
 
    API Documentation <autodoc/blot>
 
+
+.. toctree::
+   :caption: Tutorials
+   :glob:
+   :titlesonly:
+   :hidden:
+   :maxdepth: 2
+
+   Building a Blog <tutorials/building_a_blog>
+

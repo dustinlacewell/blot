@@ -7,7 +7,7 @@ Readers are responsible for parsing the content sources passed on by the loader.
 
 
 StaticReader
------------
+------------
 
 The simplest reader in Blot is the :py:class:`blot.readers.staticreader.StaticReader` which performs no parsing on source content. Therefore it also produces no metadata.
 
