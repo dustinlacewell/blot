@@ -1,4 +1,4 @@
-nltk==3.2.1
+nltk==3.4.5
 Babel==2.3.4
 Jinja2==2.8
 MarkupSafe==0.23
