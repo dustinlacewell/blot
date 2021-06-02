@@ -24,7 +24,7 @@ setup(name="blot",
           "nose==1.3.7",
           "Pygments==2.1.3",
           "titlecase==0.8.1",
-          "markdown2==2.3.1",
+          "markdown2==2.4.0",
       ],
       # metadata for upload to PyPI
       author="Dustin Lacewell",
