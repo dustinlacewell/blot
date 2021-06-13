@@ -26,7 +26,7 @@ A simple example for loading some Markdown articles might look something like::
   content_types = {
     'articles': {
       'loader': blot.loaders.BasicLoader('content/articles', ['md]),
-      'reeader': blot.readers.MarkdownReader(),
+      'reader': blot.readers.MarkdownReader(),
       'processors': [
         blot.assets.PathMetadata(),
         blot.assets.AutoSummary(),
