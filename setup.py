@@ -13,7 +13,7 @@ setup(name="blot",
           "blot.writers": "blot/writers"
       },
       install_requires=[
-          "nltk==3.2.1",
+          "nltk==3.6.3",
           "dateparser==0.4.0",
           "awesome-slugify==1.6.5",
           "bs4==0.0.1",
